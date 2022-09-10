@@ -188,7 +188,7 @@ h3.reach-out {
 }
 
 .project-header:hover img {
-    filter: brightness(.5);
+    filter: brightness(.8);
 }
 
 .project-header h1 {
