@@ -300,6 +300,10 @@ a.behance-link {
     width: 100%;
 }
 
+.vbox-child img {
+    max-height: 600px;
+}
+
 /* CONTACT PAGE */
 p.collab-call {
     text-align: center;

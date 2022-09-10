@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./venobox/dist/venobox.min.css" />
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
@@ -83,15 +85,15 @@
     <div class="ffa-graphics">
         <div class="grid">
             <div class="grid-sizer"></div>
-            <div class="grid-item"><img src="assets/ffa-1.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-2.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-3.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-4.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-5.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-6.png" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-7.png" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-8.jpg" alt=""></div>
-            <div class="grid-item"><img src="assets/ffa-9.png" alt=""></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-1.jpg" alt=""><img src="assets/ffa-1.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-2.jpg" alt=""><img src="assets/ffa-2.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-3.jpg" alt=""><img src="assets/ffa-3.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-4.jpg" alt=""><img src="assets/ffa-4.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-5.jpg" alt=""><img src="assets/ffa-5.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-6.png" alt=""><img src="assets/ffa-6.png" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-7.png" alt=""><img src="assets/ffa-7.png" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-8.jpg" alt=""><img src="assets/ffa-8.jpg" alt=""></a></div>
+            <div class="grid-item"><a class="my-link" data-gall="myGallery" href="./assets/ffa-9.png" alt=""><img src="assets/ffa-9.png" alt=""></a></div>
         </div>
     </div>
 
@@ -110,6 +112,18 @@
                 columnWidth: '.grid-sizer',
                 gutter: 10
             });
+        });
+    </script>
+
+    <script src="./venobox/dist/venobox.min.js"></script>
+
+    <script>
+        new VenoBox({
+            selector: ".my-link",
+            navigation: true,
+            navKeyboard: true,
+            navTouch: true,
+
         });
     </script>
 </body>
