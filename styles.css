@@ -177,32 +177,45 @@ h3.reach-out {
 .project-header {
     position: relative;
     text-align: center;
-    margin: 4em 2em 2em;
+    margin: 4em 0;
 }
 
-.project-header img {
+.project-hero {
     width: 100%;
     min-height: 400px;
     object-fit: cover;
     transition: .3s ease-in-out;
 }
 
-.project-header:hover img {
+.project-hero:hover {
     filter: brightness(.8);
 }
 
-.project-header h1 {
+.project-header h3 {
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
     color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.arrow-link {
+    height: 30px;
+    margin-left: 15px;
 }
 
 .project-leads {
     display: flex;
     margin: 0 2em;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#zordfiles-leads{
+    justify-content: flex-start;
 }
 
 .project-leads>div {
