@@ -211,7 +211,6 @@ h3.reach-out {
 .project-leads {
     display: flex;
     margin: 0 2em;
-    justify-content: space-between;
 }
 
 #zordfiles-leads{
@@ -219,7 +218,7 @@ h3.reach-out {
 }
 
 .project-leads>div {
-    margin-right: 2em;
+    margin-right: 5em;
 }
 
 .project-leads p {
