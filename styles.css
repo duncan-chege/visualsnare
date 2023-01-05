@@ -64,6 +64,17 @@ img.main-logo {
     color: var(--dark-grey);
     font-weight: bold;
     font-size: 1.1rem;
+    padding-bottom: 5px;
+    transition: 300ms;
+}
+
+.menu-links a:hover {
+    color: var(--brown);
+}
+
+.menu-links a.active {
+    color: var(--brown);
+    border-bottom: 2px solid;
 }
 
 .home-section,
@@ -213,7 +224,7 @@ h3.reach-out {
     margin: 0 2em;
 }
 
-#zordfiles-leads{
+#zordfiles-leads {
     justify-content: flex-start;
 }
 
@@ -321,7 +332,7 @@ p.collab-call {
     text-align: center;
     margin-top: -2em;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--dark-grey);
 }
 
@@ -350,7 +361,7 @@ p.collab-call {
     display: inline-block;
     font-weight: bold;
     color: #a64826;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .contact-block>div a {
@@ -359,7 +370,7 @@ p.collab-call {
     text-decoration: none;
     color: var(--brown);
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.2em;
     border-bottom: 2px solid #C97D61;
     padding-bottom: 0.3em;
 }
@@ -436,6 +447,10 @@ p.collab-call {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+    p {
+        font-size: 1em !important;
+    }
+
     .home-section,
     .about-section {
         margin: 3em 1em 3em 1em;
@@ -457,5 +472,13 @@ p.collab-call {
 
     .project-leads>div>p:first-child {
         height: 3em;
+    }
+
+    .project-header h3{
+        font-size: 1.5em;
+    }
+
+    .arrow-link {
+        height: 22px;
     }
 }
