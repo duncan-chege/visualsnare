@@ -397,6 +397,12 @@ p.collab-call {
     padding: 14px 0;
     margin: 0 auto;
     font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.help a:hover{
+    background-color: var(--brown);
+    color: #fff;
 }
 
 .help h5 {
