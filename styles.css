@@ -1,8 +1,8 @@
 :root {
-    --dark-grey: #4d4d4d;
-    --cream: #FFE9DC;
-    --brown: #A64826;
-    --orange: #cd7a11;
+    --brownish: #5c4b51;
+    --cream: #F2EBBF;
+    --red: #f06060;
+    --orange: #e28200;;
 }
 
 html {
@@ -38,6 +38,10 @@ h5 {
     font-size: 1.25rem;
 }
 
+p{
+    color: var(--brownish);
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -61,7 +65,7 @@ img.main-logo {
 
 .menu-links a {
     text-decoration: none;
-    color: var(--dark-grey);
+    color: var(--brownish);
     font-weight: bold;
     font-size: 1.1rem;
     padding-bottom: 5px;
@@ -69,11 +73,11 @@ img.main-logo {
 }
 
 .menu-links a:hover {
-    color: var(--brown);
+    color: var(--red);
 }
 
 .menu-links a.active {
-    color: var(--brown);
+    color: var(--red);
     border-bottom: 2px solid;
 }
 
@@ -89,7 +93,7 @@ img.main-logo {
 .brief-info h1,
 .projects h3 {
     margin-bottom: .7em;
-    color: var(--brown);
+    color: var(--red);
     letter-spacing: -1px;
 }
 
@@ -139,7 +143,7 @@ h3.reach-out {
     max-width: 800px;
     margin: 2em auto;
     text-align: center;
-    color: var(--brown);
+    color: var(--red);
 }
 
 .about-desc-1 {
@@ -169,7 +173,7 @@ h3.reach-out {
 
 .services h4 {
     text-align: center;
-    color: var(--dark-grey);
+    color: var(--brownish);
     margin: 2em 0;
 }
 
@@ -181,7 +185,7 @@ h3.reach-out {
 
 .icons p {
     font-weight: 600;
-    color: var(--dark-grey);
+    color: var(--brownish);
 }
 
 /* CASE STUDY PAGE */
@@ -260,6 +264,10 @@ h3.reach-out {
     margin: 2em;
 }
 
+.project-brief h3, .graphic-services h3{
+    color: var(--orange);
+}
+
 .project-brief h3::after,
 .project-approach h3::after,
 .graphic-services h3::after {
@@ -267,13 +275,12 @@ h3.reach-out {
     display: block;
     width: 70px;
     padding-top: 5px;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid var(--orange);
 }
 
 .project-brief p,
 .project-approach p,
 .graphic-services p {
-    color: var(--brown);
     font-weight: 500;
 }
 
@@ -333,7 +340,7 @@ p.collab-call {
     margin-top: -2em;
     font-weight: 500;
     font-size: 1.2rem;
-    color: var(--dark-grey);
+    color: var(--brownish);
 }
 
 .contact-block {
@@ -368,7 +375,7 @@ p.collab-call {
     display: inline-block;
     margin: 0 1.3em;
     text-decoration: none;
-    color: var(--brown);
+    color: var(--red);
     font-weight: 600;
     font-size: 1.2em;
     border-bottom: 2px solid #C97D61;
@@ -380,7 +387,7 @@ p.collab-call {
     width: 65%;
     margin: 3em auto;
     height: 1px;
-    background-color: var(--brown);
+    background-color: var(--red);
 }
 
 .help {
@@ -391,7 +398,7 @@ p.collab-call {
     text-align: center;
     display: block;
     text-decoration: none;
-    color: var(--brown);
+    color: var(--red);
     background-color: #fff;
     width: 170px;
     padding: 14px 0;
@@ -401,13 +408,13 @@ p.collab-call {
 }
 
 .help a:hover{
-    background-color: var(--brown);
+    background-color: var(--red);
     color: #fff;
 }
 
 .help h5 {
     text-align: center;
-    color: var(--dark-grey);
+    color: var(--brownish);
 }
 
 /* 
