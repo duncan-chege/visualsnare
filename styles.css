@@ -2,7 +2,8 @@
     --brownish: #5c4b51;
     --cream: #F2EBBF;
     --red: #f06060;
-    --orange: #e28200;;
+    --orange: #e28200;
+    ;
 }
 
 html {
@@ -38,7 +39,7 @@ h5 {
     font-size: 1.25rem;
 }
 
-p{
+p {
     color: var(--brownish);
 }
 
@@ -86,12 +87,15 @@ img.main-logo {
     margin: 5em 5em 4em 5em;
 }
 
-.brief-info {
-    max-width: 850px;
+.web-dev-section {
+    margin: 3em 5em 3em 5em;
 }
 
-.brief-info h1,
-.projects h3 {
+.brief-info {
+    text-align: center;
+}
+
+.brief-info h1 {
     margin-bottom: .7em;
     color: var(--red);
     letter-spacing: -1px;
@@ -99,6 +103,46 @@ img.main-logo {
 
 .brief-info p {
     font-size: 1.2em;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.brief-info>p:last-of-type {
+    margin-top: 2em;
+}
+
+.brief-info p:last-child {
+    margin-top: 1em;
+}
+
+.project-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em auto -1em;
+    max-width: 700px;
+}
+
+.project-icon img {
+    width: 100px;
+}
+
+.project-icon p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.project-icon a {
+    background: var(--orange);
+    color: #fff;
+    padding: 8px 15px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.project-icon a:hover {
+    background: var(--red);
 }
 
 .thumbnails {
@@ -141,7 +185,7 @@ img.main-logo {
 h3.our-belief,
 h3.reach-out {
     max-width: 800px;
-    margin: 2em auto;
+    margin: 2em auto 1em;
     text-align: center;
     color: var(--red);
 }
@@ -186,6 +230,14 @@ h3.reach-out {
 .icons p {
     font-weight: 600;
     color: var(--brownish);
+}
+
+/* WEB DEV PAGE */
+.web-dev-section>p {
+    text-align: center;
+    margin: 0 auto 3em;
+    font-size: 1.2em;
+    max-width: 850px;
 }
 
 /* CASE STUDY PAGE */
@@ -264,7 +316,8 @@ h3.reach-out {
     margin: 2em;
 }
 
-.project-brief h3, .graphic-services h3{
+.project-brief h3,
+.graphic-services h3 {
     color: var(--orange);
 }
 
@@ -407,7 +460,7 @@ p.collab-call {
     transition: .5s ease-in-out;
 }
 
-.help a:hover{
+.help a:hover {
     background-color: var(--red);
     color: #fff;
 }
@@ -487,7 +540,7 @@ p.collab-call {
         height: 3em;
     }
 
-    .project-header h3{
+    .project-header h3 {
         font-size: 1.5em;
     }
 
