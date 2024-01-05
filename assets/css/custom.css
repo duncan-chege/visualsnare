@@ -1,0 +1,629 @@
+:root {
+    --brownish: #5c4b51;
+    --cream: #F2EBBF;
+    --red: #f06060;
+    --orange: #e28200;
+    ;
+}
+
+html {
+    font-size: 100%;
+    /*16px*/
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cream);
+    margin: 1em 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--brownish);
+}
+
+a {
+    transition: .3s ease-in-out;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+header {
+    text-align: center;
+}
+
+img.main-logo {
+    width: 50px;
+}
+
+.menu-links {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-links li{
+    position: relative;
+    text-align: left;
+}
+
+.menu-item a {
+    color: var(--brownish);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.menu-item a:hover, .menu-item-has-children:hover::after  {
+    color: var(--red);
+}
+
+.current-menu-item a {
+    color: var(--red);
+    border-bottom: 3px solid;
+}
+
+.menu-links .menu-item-has-children::after{
+    content: "▼";
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.menu-links .sub-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 1.7em;
+    padding: 7px;
+    z-index: 99999;
+    width: 205px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.menu-links .menu-item-has-children:hover>.sub-menu{
+    display: block;
+}
+
+.sub-menu a {
+    font-size: 14px;
+    display: block;
+    padding: 7px 0px;
+}
+
+.home-section,
+.about-section {
+    margin: 5em 5em 4em 5em;
+}
+
+.web-dev-section {
+    margin: 3em 5em 3em 5em;
+}
+
+.brief-info {
+    text-align: center;
+}
+
+.brief-info h1 {
+    margin-bottom: .7em;
+    color: var(--red);
+    letter-spacing: -1px;
+}
+
+.brief-info p {
+    font-size: 1.2em;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.brief-info>p:last-of-type {
+    margin-top: 2em;
+}
+
+.brief-info p:last-child {
+    margin-top: 1em;
+}
+
+.project-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em auto -1em;
+    max-width: 700px;
+}
+
+.project-icon img {
+    width: 100px;
+}
+
+.project-icon p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.project-icon a {
+    background: var(--orange);
+    color: #fff;
+    padding: 8px 15px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.project-icon a:hover {
+    background: var(--red);
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em 5em;
+}
+
+.thumbnails a {
+    display: inline-block;
+}
+
+.thumbnails div {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnails img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.thumbnails img:not(.ui-thumbnail img), .ui-thumbnail img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.thumbnails img:hover:not(.ui-thumbnail img), .ui-thumbnail img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.thumbnails p {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+/* ABOUT PAGE */
+h3.our-belief,
+h3.reach-out {
+    max-width: 800px;
+    margin: 2em auto 1em;
+    text-align: center;
+    color: var(--red);
+}
+
+.about-desc-1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.about-desc-1>div,
+.about-desc-2>div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.about-desc-1 img {
+    width: 100%;
+}
+
+.about-desc-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.services h4 {
+    text-align: center;
+    color: var(--brownish);
+    margin: 2em 0;
+}
+
+.services>div {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.icons p {
+    font-weight: 600;
+    color: var(--brownish);
+}
+
+/* WEB DEV PAGE */
+.web-dev-section>p {
+    text-align: center;
+    margin: 0 auto 3em;
+    font-size: 1.2em;
+    max-width: 850px;
+}
+
+/* UI DESIGN PAGE */
+.ui-thumbnail img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.ui-title {
+    position: relative !important;
+    margin-top: 10px !important;
+    color: var(--brownish) !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    font-weight: 600;
+}
+
+.project-title {
+    color: var(--brownish);
+    text-align: center;
+    margin: 1em auto 0;
+    display: block;
+    width: fit-content;
+}
+
+.project-title::after{
+    border-bottom: 3px solid var(--brownish) !important;
+    width: 50% !important;
+    margin: 0 auto;
+}
+
+.ui-screenshots img {
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+/* CASE STUDY PAGE */
+.project-header, .ui-header {
+    position: relative;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.project-header img:not(.arrow-link), .ui-header img {
+    width: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+
+.project-header h3, .ui-header h2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.arrow-link {
+    height: 30px;
+    margin-left: 15px;
+}
+
+.project-leads {
+    display: flex;
+    margin: 0 2em;
+}
+
+#zordfiles-leads {
+    justify-content: flex-start;
+}
+
+.project-leads>div {
+    margin-right: 5em;
+}
+
+.project-leads p {
+    font-weight: bold;
+}
+
+.project-leads>div>p:first-child {
+    margin-bottom: 0.5em;
+}
+
+.project-leads>div p:last-child {
+    color: var(--orange);
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.project-leads>div a {
+    display: inline;
+    color: var(--orange);
+    font-weight: bold;
+    border-bottom: 3px solid;
+    line-height: 1.5;
+}
+
+.project-brief,
+.project-approach,
+.graphic-services {
+    max-width: 900px;
+    margin: 2em;
+}
+
+.project-brief h3,
+.graphic-services h3 {
+    color: var(--orange);
+}
+
+.project-brief h3::after,
+.project-approach h3::after,
+.graphic-services h3::after,
+.project-title:not(.ui-header .project-title)::after {
+    content: "";
+    display: block;
+    width: 70px;
+    padding-top: 5px;
+    border-bottom: 3px solid var(--orange);
+}
+
+.project-brief p,
+.project-approach p,
+.graphic-services p {
+    font-weight: 500;
+}
+
+.site-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.site-screenshots img {
+    width: 100%;
+    object-fit: contain;
+    margin: 2em 0;
+}
+
+.mobile-mockups {
+    text-align: center;
+    margin: 5em auto;
+    max-width: 800px;
+}
+
+.mobile-mockups img {
+    width: 100%;
+    object-fit: contain;
+}
+
+a.behance-link {
+    color: var(--orange);
+    border-bottom: 3px solid;
+}
+
+.ffa-graphics {
+    margin: 2em 2em 4em;
+}
+
+.ffa-graphics .grid-sizer,
+.ffa-graphics .grid-item {
+    width: 31%;
+}
+
+.grid-item {
+    margin-bottom: 10px;
+}
+
+.ffa-graphics img {
+    display: block;
+    width: 100%;
+}
+
+.vbox-child img {
+    max-height: 600px;
+}
+
+/* CONTACT PAGE */
+p.collab-call {
+    text-align: center;
+    margin-top: -1em;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--brownish);
+}
+
+.contact-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3em;
+    align-items: center;
+}
+
+.contact-block>img {
+    place-self: center;
+    max-width: 100%;
+}
+
+.contact-block>div img {
+    float: left;
+}
+
+.contact-details>div {
+    margin: 3em 0;
+}
+
+.contact-details p {
+    margin: 0.5em 1em;
+    display: inline-block;
+    font-weight: bold;
+    color: #a64826;
+    font-size: 1.2em;
+}
+
+.contact-block>div a {
+    display: inline-block;
+    margin: 0 1.3em;
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.2em;
+    border-bottom: 2px solid #C97D61;
+    padding-bottom: 0.3em;
+}
+
+/* FOOTER */
+.main-separator {
+    width: 65%;
+    margin: 3em auto;
+    height: 1px;
+    background-color: var(--red);
+}
+
+.help {
+    margin-bottom: 2em;
+}
+
+.help a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--red);
+    background-color: #fff;
+    width: 170px;
+    padding: 14px 0;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.help a:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.help h5 {
+    text-align: center;
+    color: var(--brownish);
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) {
+    .thumbnails p {
+        font-size: 1.2em;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .home-section,
+    .about-section {
+        margin: 5em 2em 4em 2em;
+    }
+
+    .thumbnails {
+        gap: 2em 2em;
+    }
+
+    .about-desc-1>div,
+    .about-desc-2>div {
+        max-width: 100%;
+    }
+
+    .contact-block {
+        justify-items: center;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    p {
+        font-size: 1em !important;
+    }
+
+    .home-section,
+    .about-section {
+        margin: 3em 1em 3em 1em;
+    }
+
+    .thumbnails {
+        grid-template-columns: 1fr;
+        gap: 2em 2em;
+    }
+
+    .project-leads {
+        overflow: scroll;
+        justify-content: space-between;
+    }
+
+    .project-leads>div {
+        margin-right: 2em;
+    }
+
+    .project-leads>div>p:first-child {
+        height: 3em;
+    }
+
+    .project-header h3, .ui-header h2 {
+        font-size: 1.5em;
+    }
+
+    .arrow-link {
+        height: 22px;
+    }
+
+    .web-dev-section {
+        margin: 3em 1em 3em 1em;
+    }
+}
